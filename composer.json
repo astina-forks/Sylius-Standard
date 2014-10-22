@@ -19,9 +19,15 @@
             "homepage": "http://github.com/Sylius/Sylius/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/astina-forks/Sylius"
+        }
+    ],
     "require": {
         "php":                                  ">=5.3.3",
-        "sylius/sylius":                        "0.11.*@dev",
+        "sylius/sylius":                        "dev-master",
 
         "doctrine/doctrine-bundle":             "@dev",
         "doctrine/migrations":                  "@dev",
