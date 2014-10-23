@@ -29,7 +29,7 @@ $ cd vendor/sylius/sylius
 $ git remote add upstream git://github.com/Sylius/Sylius.git 
 ```
 
-There are now 3 remotes in this directory, do not remove the one named `composer`
+There are now 3 remotes in this directory, **do not remove the one named** `composer`.
 
 
 Contributing
