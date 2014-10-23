@@ -8,12 +8,29 @@ This package contains the Sylius Standard Edition, which serves as a foundation 
 Installation
 ------------
 
+Clone the forked repository.
 ``` bash
-$ wget http://getcomposer.org/composer.phar
-$ php composer.phar create-project sylius/sylius-standard -s dev path/to/install
-$ cd path/to/install
+$ git clone git@github.com:astina-forks/Sylius-Standard.git
+```
+
+Start vagrant, then ssh into the box and install:
+``` bash
+$ composer install
 $ php app/console sylius:install
 ```
+
+Configure Git
+-------------
+
+Sylius bundles in `vendor/sylius/sylius` are from the [astina-forks/Sylius](https://github.com/astina-forks/Sylius) repository, composer installs them from GitHub. 
+In order to be able to merge upstream code, add the upstream remote.
+``` bash
+$ cd vendor/sylius/sylius
+$ git remote add upstream git://github.com/Sylius/Sylius.git 
+```
+
+There are now 3 remotes in this directory, do not remove the one named `composer`
+
 
 Contributing
 ------------
